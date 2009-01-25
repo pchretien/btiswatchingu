@@ -3,7 +3,7 @@ import MySQLdb
 class db_mysql:
     __server = "localhost"
     __username = "root"
-    __password = "basbrun2"
+    __password = "password"
     
     __conn = None
     
