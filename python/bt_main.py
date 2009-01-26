@@ -1,10 +1,9 @@
-
 ## BTisWatchingU ##
 #
 # This program scans for bluetooth devices and add their address and name to a 
 # centralized database. This database have some simple facilities to determine
 # where and when the device have been spotted.
-# Copyright (C) 2008,2009  Philippe Chrétien
+# Copyright (C) 2008,2009  Philippe Chretien
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
