@@ -34,12 +34,11 @@ def timerEvent():
         lock = True
         print "timer", time.localtime()        
         
-        print "performing inquiry..."
+        print "performing inquiry ..."
         nearby_devices = ()
         try:
             # Search for bluetooth devices ...        
             nearby_devices = bluetooth.discover_devices(lookup_names = True)
-            print "found %d devices" % len(nearby_devices)
         except:
             print "bluetooth network not found"
     
@@ -55,6 +54,7 @@ def timerEvent():
         None
     finally:
         lock = False
+
 
 # To avoid parallel execution of the thread
 lock = False

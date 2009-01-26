@@ -1,13 +1,32 @@
+import tokenize
 import MySQLdb
 
 class db_mysql:
     __server = "localhost"
     __username = "root"
-    __password = "password"
+    __password = ""
     
     __conn = None
     
     def __init__(self):
+        print "reading bt_db_mysql.config configuration file"
+        file = open("./bt_db_mysql.config")
+        try:
+            lines = file.read().splitlines()
+            for line in lines:
+                print line
+                tokens = line.split('=')
+                if tokens[0] == "server":
+                    self.__server = tokens[1]
+                if tokens[0] == "username":
+                    self.__username = tokens[1]
+                if tokens[0] == "password":
+                    self.__password = tokens[1]
+        except:
+            None
+        finally:
+            file.close()
+            
         print "connecting to the database ..."
         self.__conn = MySQLdb.connect (host = self.__server, user = self.__username, passwd = self.__password, db = "bluetooth")
       
