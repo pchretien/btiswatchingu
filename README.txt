@@ -16,6 +16,13 @@ Database files:
 	- mysql/v1.0.0/table/ping.sql			Creates the table bt_ping for the first time
 	- mysql/v1.0.0/table/bt_user.sql		Creates the table bt_user for the first time
 	
+Other files:
+	- README.txt 			this file
+	- LICENSE.txt 			GPL license
+	- .project			Eclipse project file
+	- .pydevproject			Eclipse PyDev project file
+	- python/bt_db_mysql.config	MySql connection parameters
+	
 Dependencies:
 	- MySql database server
 	  http://www.mysql.com/
