@@ -6,9 +6,7 @@
 # Copyright (C) 2008,2009  Philippe Chretien
 #
 # This program is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version.
+# modify it under the terms of the GNU General Public License Version 2
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -36,7 +34,7 @@ from bt_ping import *
 
 # Initialize application parameters
 if len(sys.argv) < 3:
-	print "bt_main [username] [location name] [period in seconds]"
+	print "usage: bt_main username location_name period(seconds)"
 	quit()
 	
 # argv[0] is the module name
